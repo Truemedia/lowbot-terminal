@@ -22,12 +22,20 @@ module.exports = {
   /**
     * Input configuration
     * @namespace input
-    * @prop {String} detector - Library used to detect intent of msg
-    * @prop {String} parser - Library used to parse information from msg
     */
   input: {
-    detector: 'eduir', // Educated intent recogniser
-    parser: 'intent-desire' // Reverse BDI lookup
+    /**
+      * Computer vision algorithms
+      */
+    cva: {support: false}
+    /**
+      * Natural language understanding
+      */
+    nlu: {support: true, native: false}
+    /**
+      * Speech recognition layer
+      */
+    srl: {support: false},
   },
   /**
     * Output configuration
