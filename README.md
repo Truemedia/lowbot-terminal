@@ -1,5 +1,5 @@
-# Lowbot terminal
-Terminal adapter for lowbot
+# Mind Stack terminal
+Terminal adapter for Mind Stack
 
 ## This is a work in progress
 
@@ -7,20 +7,20 @@ Terminal adapter for lowbot
 
 NPM
 ```bash
-    npm i --save lowbot-terminal
+    npm i --save mindstack-terminal
 ```
 
 Yarn
 ```bash
-    yarn add lowbot-terminal
+    yarn add mindstack-terminal
 ```
 
 ## Usage
 Node
 ```js
-    const LowBot = require('lowbot');
-    const terminal = require('lowbot-terminal');
+    const Bot = require('mindstack');
+    const terminal = require('mindstack-terminal');
 
-    let botInstance = new LowBot()
+    let botInstance = new Bot()
       .useAdapter(terminal);
 ```

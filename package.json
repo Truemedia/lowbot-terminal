@@ -1,17 +1,17 @@
 {
-  "name": "lowbot-terminal",
+  "name": "mindstack-terminal",
   "version": "0.1.1",
-  "description": "Terminal adapter for lowbot",
+  "description": "Terminal adapter for Mind Stack",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Truemedia/lowbot-terminal.git"
+    "url": "git+https://github.com/Truemedia/mindstack-terminal.git"
   },
   "keywords": [
-    "lowbot",
+    "mindstack",
     "adapter",
     "terminal",
     "api",
@@ -21,7 +21,12 @@
   "author": "Wade Penistone",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Truemedia/lowbot-terminal/issues"
+    "url": "https://github.com/Truemedia/mindstack-terminal/issues"
   },
-  "homepage": "https://github.com/Truemedia/lowbot-terminal#readme"
+  "homepage": "https://github.com/Truemedia/mindstack-terminal#readme",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
 }
