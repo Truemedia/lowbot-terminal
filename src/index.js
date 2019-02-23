@@ -27,15 +27,15 @@ module.exports = {
     /**
       * Computer vision algorithms
       */
-    cva: {support: false}
+    cva: {support: false},
     /**
       * Natural language understanding
       */
-    nlu: {support: true, native: false}
+    nlu: {support: true, native: false},
     /**
       * Speech recognition layer
       */
-    srl: {support: false},
+    srl: {support: false}
   },
   /**
     * Output configuration
