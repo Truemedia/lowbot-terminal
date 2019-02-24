@@ -1,3 +1,8 @@
+// Lib
+const Client = require('./client');
+// Requests
+const Nlu = require('./request/nlu');
+
 /**
   * Terminal adapter
   * @namespace adapter
@@ -15,10 +20,15 @@ module.exports = {
   /**
     * Client configuration
     * @namespace client
-    * @prop {Slack} instance - API class instance
+    * @prop {Client} instance - API class instance
     * @prop {Object} methods - Login method used to invoke authentication
     */
-  client: {},
+  client: {
+    instance: Client,
+    methods: {
+      login: 'bootstrap'
+    }
+  },
   /**
     * Input configuration
     * @namespace input
@@ -31,7 +41,7 @@ module.exports = {
     /**
       * Natural language understanding
       */
-    nlu: {support: true, native: false},
+    nlu: {support: true, native: false, request: Nlu},
     /**
       * Speech recognition layer
       */
@@ -45,7 +55,8 @@ module.exports = {
     */
   output: {
     format: 'md', // Markdown
-    target: 'terminal' // Terminal only
+    target: 'terminal', // Terminal only
+    persona: false // No persona support
   },
   /**
     * Variable configuration
