@@ -1,6 +1,6 @@
 {
   "name": "mindstack-terminal",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Terminal adapter for Mind Stack",
   "main": "src/index.js",
   "scripts": {
